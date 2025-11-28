@@ -4,7 +4,7 @@ import Card from './card';
 
 const SearchCard = () => {
     return (
-       <Card height='120' />
+       <Card height='175' />
     );
 }
 
