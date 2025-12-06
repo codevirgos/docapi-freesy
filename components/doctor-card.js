@@ -46,7 +46,11 @@ const DoctorCard = (props) => {
                     <Text style={{color:'gray', fontSize:16}}> {loc} </Text>
                 </View>
                 <Text style={{color:'gray', fontSize:16}}> {specialities} </Text>
-            </View> 
+             <View style={{minWidth:'100%', marginTop:"3%", borderTopWidth:1, borderColor:'#F1F1F1', flexDirection:'row', justifyContent:'space-between'}}>
+                <Text style={{paddingTop:8, color:'gray'}}> 4 reviews </Text>
+                <Text style={{ borderColor:'#F1F1F1', paddingTop:8, color:'lightgray'}}> 11/15/2025 </Text>
+            </View>
+            </View>
         </View>
        </TouchableOpacity>
     );

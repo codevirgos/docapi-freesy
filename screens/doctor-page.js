@@ -63,6 +63,10 @@ const DoctorPage = ({navigation, route}) => {
                             <Image style={{width: 25, height:25, tintColor:'white', marginHorizontal:5, marginRight:5}} source={require("../images/cross.png")} />
                             <Text style={{fontSize:20, color:'white'}}> {specialities} </Text>
                         </View>
+                         <View style={{flexDirection:'row', alignItems:'center', borderWidth:0, marginTop:10}}>
+                            <Image style={{width: 25, height:25, tintColor:'white', marginHorizontal:5, marginRight:5}} source={require("../images/audio-lines.png")} />
+                            <Text style={{fontSize:20, color:'white'}}> English, Spanish </Text>
+                        </View>
                     </View>
                     <TouchableOpacity style={styles.create_button}>
                         <Text style={{textAlign:'center', color:'white', fontWeight:'500', fontSize:20}}> Write a Review </Text>
@@ -70,12 +74,11 @@ const DoctorPage = ({navigation, route}) => {
                     <TouchableOpacity style={styles.delete_button}>
                         <Text style={{textAlign:'center', color:'#517fa4', fontWeight:'500', fontSize:20}}> Delete Review </Text>
                     </TouchableOpacity>
+                    <View style={{borderTopWidth:1, marginTop:30, borderColor:'#F0F0F0', paddingTop:20, paddingLeft:15}}>
+                        <Text style={{fontWeight:'bold', fontSize:20}}> Patient Reviews (2) </Text>
+                    </View>
                 </View>
-               
             </View>
-             
-           
-             
         </ScrollView>
     );
 }
@@ -105,6 +108,7 @@ const styles = StyleSheet.create({
         borderTopRightRadius:10
     },
     create_button: {
+        width:'90%',
         borderColor:'#517fa4',
         marginTop:75,
         marginHorizontal:5,//todo
@@ -117,8 +121,10 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         marginBottom:5,
         shadowColor:'#517fa4',
+        alignSelf:'center'
     },
     delete_button: {
+        width:'90%',
         borderColor:'#517fa4',
         //borderWidth:.5,
         marginTop:5,
@@ -132,6 +138,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         marginBottom:5,
         shadowColor:'#517fa4',
+        alignSelf:'center'
     },
 });
 
